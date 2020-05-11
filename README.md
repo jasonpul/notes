@@ -34,7 +34,8 @@ Merge branches
 git merge “branch”
 ```
 
-##Javascript
+## Javascript
+
 export function
 ```
 module.exports = xxx;
@@ -78,7 +79,8 @@ Iterate through object keys
 for (let key in exampleObj) {}
 ```
 
-##Javascript Testing
+## Javascript Testing
+
 typical process
 ```
 install jest: npm install --save-dev jest
@@ -89,7 +91,8 @@ code test as:
   test('description', () => {expect(function.toBe(answer}
 ```
 
-##NPM
+## NPM
+
 Initialize project
 ```
 npm init (add -y to use defaults)
@@ -99,13 +102,15 @@ Install package dependencies
 npm install
 ```
 
-##Python
+## Python
+
 Regex for all indices
 ```
 [x.start() for x in re.finditer(r'\)', input_string)]
 ```
 
-##Python Testing
+## Python Testing
+
 Typical process
 ```
 import unittest
@@ -114,7 +119,8 @@ Write methods in that class that are prepended by test_, do a self.asertXXX in e
 Call unittest.main() in the main file test
 ```
 
-##VSCode
+## VSCode
+
 Open current window in directory
 ```
 code -r .
@@ -124,7 +130,7 @@ Open new window in directory
 code .
 ```
 
-#Ubuntu System Setup
+# Ubuntu System Setup
 install nvm using [link](https://www.liquidweb.com/kb/how-to-install-node-version-manager-on-ubuntu/)
 Install npm
 ```
