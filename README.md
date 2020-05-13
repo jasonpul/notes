@@ -78,6 +78,10 @@ Iterate through object keys
 ```
 for (let key in exampleObj) {}
 ```
+slice array
+```
+array.slice(start, end); (end not included)
+```
 
 ## Javascript Testing
 
