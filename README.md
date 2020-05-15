@@ -82,6 +82,22 @@ slice array
 ```
 array.slice(start, end); (end not included)
 ```
+convert float to integer
+```
+Math.floor(x)
+```
+get list of object keys
+```
+Object.keys(object)
+```
+check if key exists in object
+```
+object.hasOwnProperty(key)
+```
+max of list
+```
+Math.max(...list); (this is almost like list comprehension)
+```
 
 ## Javascript Testing
 
@@ -156,4 +172,8 @@ Set git global ignore
 ```
 touch  ~/.gitignore_global
 git config --global core.excludesfile '~/.gitignore_global'
+```
+Set node runtime for VSCode debugging [link](https://askubuntu.com/questions/1065276/cannot-find-runtime-node-on-path-in-visual-studio-code-running-installed-on-u)
+```
+"runtimeExecutable": nodepath
 ```
