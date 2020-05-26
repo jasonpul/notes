@@ -177,3 +177,36 @@ Set node runtime for VSCode debugging [link](https://askubuntu.com/questions/106
 ```
 "runtimeExecutable": nodepath
 ```
+
+# Ubuntu PostgreSQL Setup
+Install PostgreSQL
+```
+sudo apt-get install -y postgresql libpq-dev
+```
+## Adding a PostgreSQL role that Matches your Linux Username
+If you don't add a role that matches your linux username, you must execute all psql commands under the postgres user using
+```
+sudo -u postgres <command>
+```
+For example
+```
+sudo -u postgres psql
+```
+After adding your linux username as a psql role, you previous command can be executed under your current account
+```
+psql
+```
+## Role Creation Steps
+Create a PostgreSQL role (user) that matches your linux username
+```
+sudo -u postgres createuser --interactive
+```
+Enter your linux username and password. The interactive output should look like this:
+```
+Enter name of role to add: <linux-username>
+Shall the new role be a superuser? (y/n) y
+```
+Create a default database for your new postgres roll
+```
+sudo -u postgres createdb <linux-username>
+```
