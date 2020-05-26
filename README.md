@@ -173,6 +173,33 @@ Set git global ignore
 touch  ~/.gitignore_global
 git config --global core.excludesfile '~/.gitignore_global'
 ```
+Set VSCode as your git editor
+```
+git config --global core.editor "code -n -w"
+```
+add the following to a .bash_profile
+```
+alias lsl='ls -al'
+alias python='python3.7'
+alias pip='pip3'
+
+parse_git_branch() {
+  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
+}
+
+if [ -f ~/.git-completion.bash ]; then
+  . ~/.git-completion.bash
+fi
+
+export PS1="\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;1m\]\w\[\033[m\]\$(parse_git_branch) \[\033[00m\]$\[\033[00m\] "
+export PROMPT_COMMAND='echo -ne "\033]0;${PWD##*/}\007"'
+export CLICOLOR=1
+export LSCOLORS=ExFxBxDxCxegedabagacad
+```
+source the bash_profile from bashrc
+```
+source ~/.bash_profile
+```
 Set node runtime for VSCode debugging [link](https://askubuntu.com/questions/1065276/cannot-find-runtime-node-on-path-in-visual-studio-code-running-installed-on-u)
 ```
 "runtimeExecutable": nodepath
