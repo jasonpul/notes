@@ -177,6 +177,10 @@ Set node runtime for VSCode debugging [link](https://askubuntu.com/questions/106
 ```
 "runtimeExecutable": nodepath
 ```
+install sqlite3
+```
+sudo apt  install sqlite3 libsqlite3-dev
+```
 
 # Ubuntu PostgreSQL Setup
 Install PostgreSQL
@@ -184,6 +188,7 @@ Install PostgreSQL
 sudo apt-get install -y postgresql libpq-dev
 ```
 ## Adding a PostgreSQL role that Matches your Linux Username
+steps take from [link](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgresql-on-ubuntu-18-04)
 If you don't add a role that matches your linux username, you must execute all psql commands under the postgres user using
 ```
 sudo -u postgres <command>
