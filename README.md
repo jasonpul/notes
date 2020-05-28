@@ -150,6 +150,42 @@ Open new window in directory
 code .
 ```
 
+## PostgreSQL
+### Basic Terminal Commands
+command | description |
+------ |  ---------- | --- |
+psql | enter psotgresql CLI|
+psql \<db name\> | enter psotgresql CLI within \<db name\> database|
+createdb \<name\>  | create database|
+dropdb \<name\>  | delete database|
+pg_dump \<name\>  | extract db into file|
+
+### Basic PostgreSQL CLI Commands
+command | description |
+------ |  ---------- | --- |
+\l |list all db|
+\du |list all users|
+\q |quit CLI|
+\d \<table\>|list table|
+\i \<filename\>|execute CLI commands from file|
+
+### Table Filtering
+```
+SELECT * FROM table_name WHERE [column] [operator] [value];
+```
+operator | description | example |
+------ |  ---------- | --- |
+=  | equals | `SELECT * FROM students WHERE first_name = 'Andre';` |
+<> | not equals | `SELECT * FROM enrollments WHERE grade <> 'A';` |
+\>  | greater than | `SELECT * FROM classes WHERE credits > 2;` |
+<  | less than | `SELECT * FROM enrollments WHERE grade < 'B';` |
+\>= | greater than or equal to | `SELECT * FROM enrollments WHERE grade >= 'B';` |
+<= | less than or equal to | `SELECT * FROM enrollments WHERE grade <= 'C';` |
+BETWEEN | between values | `SELECT * FROM classes WHERE credits BETWEEN 3 AND 4;` |
+LIKE | pattern match, `%` represents wildcard | `SELECT * FROM classes WHERE name like 'SPAN%';` |
+IN | match against a list of values | `SELECT * FROM enrollments WHERE grade IN ('A','B');` |
+
+
 # Ubuntu System Setup
 install nvm using [link](https://www.liquidweb.com/kb/how-to-install-node-version-manager-on-ubuntu/)
 Install npm
