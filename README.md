@@ -164,7 +164,7 @@ code .
 command | description |
 ------ |  ---------- | --- |
 psql | enter psotgresql CLI |
-psql \<db name\> | enter psotgresql CLI within \<db name\> database |
+<!-- psql \<db name\> | enter psotgresql CLI within \<db name\> database |
 createdb \<name\>  | create database |
 dropdb \<name\>  | delete database |
 pg_dump \<name\>  | extract db into file |
@@ -176,7 +176,7 @@ command | description |
 \du | list all users |
 \q | quit CLI |
 \d \<table\> | list table |
-\i \<filename\> | execute CLI commands from file |
+\i \<filename\> | execute CLI commands from file | -->
 
 ### Table Filtering
 ```
