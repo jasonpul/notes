@@ -165,7 +165,7 @@ code .
 | ------ |  ---------- | --- |
 | psql | enter psotgresql CLI |
 command | description 
------- |  ---------- | --- 
+------ |  ---------- 
 psql | enter psotgresql CLI
 <!-- psql \<db name\> | enter psotgresql CLI within \<db name\> database |
 createdb \<name\>  | create database |
