@@ -34,6 +34,12 @@ Merge branches
 git merge “branch”
 ```
 
+Reset branch back to match remote
+```
+git fetch origin && git reset --hard origin/<branch name> && git clean -f -d
+
+```
+
 ## Javascript
 
 export function
@@ -128,7 +134,10 @@ Regex for all indices
 ```
 [x.start() for x in re.finditer(r'\)', input_string)]
 ```
-
+setting up a virtual envirnment
+```
+python -m venv <venv name>
+```
 ## Python Testing
 
 Typical process
@@ -154,20 +163,20 @@ code .
 ### Basic Terminal Commands
 command | description |
 ------ |  ---------- | --- |
-psql | enter psotgresql CLI|
-psql \<db name\> | enter psotgresql CLI within \<db name\> database|
-createdb \<name\>  | create database|
-dropdb \<name\>  | delete database|
-pg_dump \<name\>  | extract db into file|
+psql | enter psotgresql CLI |
+psql \<db name\> | enter psotgresql CLI within \<db name\> database |
+createdb \<name\>  | create database |
+dropdb \<name\>  | delete database |
+pg_dump \<name\>  | extract db into file |
 
 ### Basic PostgreSQL CLI Commands
 command | description |
 ------ |  ---------- | --- |
-\l |list all db|
-\du |list all users|
-\q |quit CLI|
-\d \<table\>|list table|
-\i \<filename\>|execute CLI commands from file|
+\l | list all db |
+\du | list all users |
+\q | quit CLI |
+\d \<table\> | list table |
+\i \<filename\> | execute CLI commands from file |
 
 ### Table Filtering
 ```
@@ -244,7 +253,14 @@ install sqlite3
 ```
 sudo apt  install sqlite3 libsqlite3-dev
 ```
-
+install python3.7
+```
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+sudo apt-get install -y python3.7
+sudo apt-get install -y python3.7-dev
+sudo apt-get install -y python3.7-venv
+pip install psycopg2
+```
 # Ubuntu PostgreSQL Setup
 Install PostgreSQL
 ```
