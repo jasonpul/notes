@@ -164,6 +164,9 @@ code .
 | command | description |
 | ------ |  ---------- | --- |
 | psql | enter psotgresql CLI |
+operator | description | example |
+------ |  ---------- | --- |
+=  | equals | `SELECT * FROM students WHERE first_name = 'Andre';` |
 <!-- psql \<db name\> | enter psotgresql CLI within \<db name\> database |
 createdb \<name\>  | create database |
 dropdb \<name\>  | delete database |
